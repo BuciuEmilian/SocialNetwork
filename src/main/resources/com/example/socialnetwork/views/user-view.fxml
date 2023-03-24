@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="410.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.UserController">
+   <children>
+      <TableView fx:id="tableView" layoutX="163.0" prefHeight="285.0" prefWidth="453.0">
+        <columns>
+            <TableColumn fx:id="usernameColumn" minWidth="0.0" prefWidth="110.0" text="Username" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="110.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="110.0" style="-fx-alignement: CENTER;" text="Last Name" />
+            <TableColumn fx:id="dateTimeColumn" prefWidth="130.0" text="Date time" />
+        </columns>
+      </TableView>
+      <Button layoutX="37.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="33.0" prefWidth="84.0" text="Logout">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="200.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="30.0" prefWidth="120.0" text="Add friend">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="200.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="30.0" prefWidth="120.0" text="Remove friend">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="406.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleReceivedFriendRequests" prefHeight="30.0" prefWidth="166.0" text="Received friend requests">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="406.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleSentFriendRequests" prefHeight="30.0" prefWidth="166.0" text="Sent friend request">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="96.0" layoutY="-96.0" text="Label" />
+      <Label fx:id="usernameLabel" alignment="CENTER" layoutX="18.0" layoutY="165.0" prefHeight="33.0" prefWidth="122.0" text="Label">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="20.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/istockphoto-1214428300-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="37.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleChat" prefHeight="33.0" prefWidth="84.0" text="Open chat">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

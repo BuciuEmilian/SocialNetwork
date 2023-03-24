@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="336.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.SignupController">
+    <children>
+        <TextField fx:id="usernameField" layoutX="26.0" layoutY="103.0" prefHeight="26.0" prefWidth="224.0" promptText="Username">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+        <TextField fx:id="passwordField" layoutX="26.0" layoutY="143.0" prefHeight="26.0" prefWidth="224.0" promptText="Password">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="firstNameField" layoutX="26.0" layoutY="184.0" prefHeight="26.0" prefWidth="224.0" promptText="First name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="lastNameField" layoutX="26.0" layoutY="221.0" prefHeight="26.0" prefWidth="224.0" promptText="Last name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextField>
+        <Button layoutX="26.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleSinginButtonAction" prefHeight="30.0" prefWidth="219.0" text="Sign up">
+            <font>
+                <Font name="Times New Roman Bold" size="14.0" />
+            </font>
+        </Button>
+      <Label layoutX="36.0" layoutY="35.0" text="Social Netowork">
+         <font>
+            <Font name="Segoe Script Bold" size="23.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

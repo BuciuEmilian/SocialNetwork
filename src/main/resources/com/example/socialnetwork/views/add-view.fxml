@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="353.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.AddController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="300.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="200.0" text="Username" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="200.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="200.0" text="Last Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="268.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="31.0" prefWidth="65.0" text="Add" />
+   </children>
+</AnchorPane>

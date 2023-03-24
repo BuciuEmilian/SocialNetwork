@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#handleKeyPressed" prefHeight="347.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.StartController">
+   <children>
+      <AnchorPane layoutX="279.0" layoutY="27.0" prefHeight="232.0" prefWidth="265.0">
+         <children>
+            <Label layoutX="33.0" layoutY="14.0" text="Social Network">
+               <font>
+                  <Font name="Segoe Script Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="21.0" layoutY="80.0" prefHeight="30.0" prefWidth="224.0" promptText="Username">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="passwordField" layoutX="21.0" layoutY="123.0" prefHeight="30.0" prefWidth="224.0" promptText="Password">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="loginButton" layoutX="21.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="30.0" prefWidth="224.0" text="Log in">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="279.0" layoutY="265.0" prefHeight="56.0" prefWidth="265.0">
+         <children>
+            <Label layoutX="20.0" layoutY="5.0" prefHeight="47.0" prefWidth="161.0" text="Don't have an account? ">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="181.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSinginButtonAction" text="Sign up">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="285.0" fitWidth="200.0" layoutX="43.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/image-placeholder-vertical.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
